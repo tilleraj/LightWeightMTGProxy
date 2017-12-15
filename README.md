@@ -10,3 +10,4 @@ Our goal was to have something in the middle, a card that looked and felt famili
 The project accepts deck lists in the form of CSV's. It ignores the top line and assumes the first two columns are Quantity and Name respectively.
 
 HUGE shoutout to http://mtgjson.com/ for making this as effortless as possible.
+Documents on PyCairo https://pycairo.readthedocs.io/en/latest/
