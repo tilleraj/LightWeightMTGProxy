@@ -2,7 +2,7 @@ import json
 import pathlib
 
 cardDb = dict()
-with open(pathlib.Path(__file__).parent / 'AllCards.json') as dbFile:
+with open(pathlib.Path(__file__).parent / 'AllCards.json', encoding='utf-8') as dbFile:
     db = json.load(dbFile)
 
 class CardModel:
