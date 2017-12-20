@@ -2,7 +2,7 @@
 Generating lightweight proxies for playtesting Magic: The Gathering
 
 
-# Description
+## Description
 This project came from a desire for a quick, easy, simple, and cheap way to print proxy cards at home for Magic: The Gathering.
 
 Many of the tools found online at the time were based on high-res scans and the ones that weren't looked nothing like magic cards.
@@ -11,9 +11,23 @@ Our goal was to have something in the middle, a card that looked and felt famili
 
 The project accepts deck lists in the form of CSV's. It ignores the top line and assumes the first two columns are Quantity and Card Name respectively.
 
+## Getting Started
+Basically, all that is required to run is [Python 3.6](https://www.python.org/) (Yes, actually 3.6 or newer; 3.5 will not work.) and [PyCairo](https://cairographics.org/pycairo/). Depending on how you may use Python for other things, there are a few options for getting those installed. The instructions below are intended to be as simple as possible.
 
-# Sources and Documentation
-## Card Text
+### Windows
+- Download and install Python 3 using [the installer](https://www.python.org/downloads/windows/).
+- Download this precompiled PyCairo [wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo).
+- Run `pip install path\to\wheel_file.whl` to install PyCairo in a shell.
+- Make a .csv deck list and run `python path\to\LightWeighMTGProxy\main.py my_decklist.csv`
+
+### MacOS
+- Install [Homebrew](https://brew.sh/) if you haven't already.
+- Install Python 3 using `brew install python3` or upgrade it to the latest version.
+- Install PyCairo using `pip3 install PyCairo`.
+- Make a .csv deck list and run `python path/to/LightWeighMTGProxy/main.py my_decklist.csv`
+
+## Sources and Documentation
+### Card Text
 The text layout is done using PyCairo. You can find their documentation at the link below. The website is kind of a mess and this is the one you want.
 - Docs: https://pycairo.readthedocs.io/en/latest/
 
@@ -21,7 +35,7 @@ Any and all praise for card copy should go to people behind MTGJSON. They made t
 - Website: http://mtgjson.com/
 - GitHub: http://github.com/mtgjson/mtgjson
 
-## Images, .PSDs, and fonts
+### Images, .PSDs, and fonts
 The source fils for making the layout images were gotten from the thread created by .Rai at Cardgame Coalition entitled "HD MtG Card Template: Deluxe Edition!"
 - Thread: http://cardgamecoalition.forumotion.com/t789-hd-mtg-card-template-deluxe-edition
 
@@ -29,14 +43,16 @@ The source fils for making the layout images were gotten from the thread created
 - Thread: http://www.mtgsalvation.com/forums/community-forums/creativity/artwork/tutorials/341578-new-psd-links-thread-last-update-on-06-16-2012
 
 
-# Legal
+## Legal
 Official Statement from Elaine Chase, Vice President of Global Brand Strategy and Marketing for Wizards of the Coast (Jan 14, 2016)
 https://magic.wizards.com/en/articles/archive/news/proxies-policy-and-communication-2016-01-14
 
-## tl;dr
+### tl;dr
+We aren't lawyers, but...
+
 We aren't trying to make reproductions, we don't use official art, what we're producing wouldn't pass as the real thing, and WotC **IS OKAY** with this kind of behavior.
 
-## Original Copy and Emphasis. (Edited for Brevity)
+### Original Copy and Emphasis. (Edited for Brevity)
 [L]et's clear things up.
 
 **Our stated policy specifically applies to DCI-sanctioned events. Cards used in DCI-sanctioned events must be authentic *Magic* cards.** The only exception is if a card has become damaged during the course of play in a particular event.
