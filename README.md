@@ -12,7 +12,9 @@ Our goal was to have something in the middle, a card that looked and felt famili
 The project accepts deck lists in the form of CSV's. It ignores the top line and assumes the first two columns are Quantity and Card Name respectively.
 
 ## Getting Started
-Basically, all that is required to run is [Python 3.6](https://www.python.org/) (Yes, actually 3.6 or newer; 3.5 will not work.) and [PyCairo](https://cairographics.org/pycairo/). Depending on how you may use Python for other things, there are a few options for getting those installed. The instructions below are intended to be as simple as possible.
+Basically, all that is required to run is [Python 3.6](https://www.python.org/) (Yes, actually 3.6 or newer; 3.5 will not work.) and [PyCairo](https://cairographics.org/pycairo/). Depending on how you may use Python for other things, there are a few options for getting those installed. The instructions below are intended to be as simple as possible.  
+#### Note on AllCards.json:
+Since starting this project, the team at mtgjson has been very busy (and a lot of cards have been released). As such, the size of the AllCards.json file has balooned large enough for GitHub to be angry about it. Please download the file directly from [their website](https://mtgjson.com/downloads/all-files/) and place it in the same directory as `main.py`
 
 ### Windows
 - Download and install Python 3 using [the installer](https://www.python.org/downloads/windows/)
