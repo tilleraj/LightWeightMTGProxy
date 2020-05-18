@@ -15,15 +15,16 @@ The project accepts deck lists in the form of CSV's. It ignores the top line and
 Basically, all that is required to run is [Python 3.6](https://www.python.org/) (Yes, actually 3.6 or newer; 3.5 will not work.) and [PyCairo](https://cairographics.org/pycairo/). Depending on how you may use Python for other things, there are a few options for getting those installed. The instructions below are intended to be as simple as possible.
 
 ### Windows
-- Download and install Python 3 using [the installer](https://www.python.org/downloads/windows/).
-- Download this precompiled PyCairo [wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo).
-- Run `pip install path\to\wheel_file.whl` to install PyCairo in a shell.
+- Download and install Python 3 using [the installer](https://www.python.org/downloads/windows/)
+- Download this precompiled PyCairo [wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo)
+- Run `pip install path\to\wheel_file.whl` to install PyCairo in a shell
 - Make a .csv deck list and run `python path\to\LightWeighMTGProxy\main.py my_decklist.csv`
 
 ### MacOS
-- Install [Homebrew](https://brew.sh/) if you haven't already.
-- Install Python 3 using `brew install python3` or upgrade it to the latest version.
-- Install PyCairo using `pip3 install PyCairo`.
+- Install [Homebrew](https://brew.sh/) if you haven't already
+- Install Python 3 using `brew install python3` or upgrade it to the latest version
+- Install cairo and pkg-config with `brew install cairo pkg-config` (required for PyCairo)
+- Install PyCairo using `pip install PyCairo`.
 - Make a .csv deck list and run `python path/to/LightWeighMTGProxy/main.py my_decklist.csv`
 
 ## Sources and Documentation
