@@ -1,4 +1,7 @@
 __pycache__
-test.png
-page_*.png
+.DS_Store
 AllCards.json
+decks
+page_*.png
+*_p*.png
+test.png
