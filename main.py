@@ -1,7 +1,8 @@
 #! /usr/bin/env python3
-import json
-import pathlib
 import csv
+import json
+import os
+import pathlib
 import sys
 
 import cairo
@@ -14,9 +15,12 @@ if len(sys.argv ) < 2:
     print('Error: No file specified')
     exit(1)
 
+deck_file = sys.argv[1]
+deck_name = os.path.basename(deck_file).split(".")[0]
 nameList = []
 
-with open(sys.argv[1], encoding='utf-8') as csvFile:
+
+with open(deck_file, encoding='utf-8') as csvFile:
     reader = csv.reader(csvFile)
     reader.__next__()
     for row in reader:
@@ -40,5 +44,5 @@ for page_number in range(len(pageList)):
         ctx.set_matrix(mat)
         drawCard(card, ctx)
 
-    surf.write_to_png(f'page_{page_number}.png')
+    surf.write_to_png(f'{deck_name}_p{page_number}.png')
 

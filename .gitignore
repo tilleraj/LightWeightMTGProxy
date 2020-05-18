@@ -1,4 +1,6 @@
 __pycache__
+.DS_Store
+AllCards.json
 test.png
 page_*.png
-AllCards.json
+*_p*.png
