@@ -65,6 +65,13 @@ def drawCard(card: card_model.CardModel , ctx: cairo.Context):
         ctx.set_font_size(layout.ptH)
         ctx.move_to(*layout.ptBL)
         ctx.show_text(ptStr)
+    
+    # Draw Loyalty
+    if card.loyalty is not None:
+        ptStr = " " + str(card.loyalty) + " "
+        ctx.set_font_size(layout.ptH)
+        ctx.move_to(*layout.loyaltyBL)
+        ctx.show_text(ptStr)
 
     # Draw Mana Cost
     ctx.set_font_size(layout.nameH)

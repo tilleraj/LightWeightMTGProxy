@@ -13,6 +13,7 @@ class CardModel:
         self.manaCost = "\{W\}"
         self.power = None
         self.toughness = None
+        self.loyalty = None
 
         if (name is not None):
             self.load(db[name])
@@ -34,6 +35,9 @@ class CardModel:
         if 'power' in data:
             self.power = int(data['power'])
             self.toughness = int(data['toughness'])
+        
+        if 'loyalty' in data:
+            self.loyalty = int(data['loyalty'])
 
     def __str__(self):
         return f'{self.nameStr} - {self.manaCost} ({self.typeStr})'
