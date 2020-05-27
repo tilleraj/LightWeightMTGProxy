@@ -13,8 +13,9 @@ typeH = 2
 cardTextBL = (6,58)
 cardTextH = 2.2
 cardTextW = 51
-ptBL = (50.5,82)
+ptBL = (51,81.75)
 ptH = 3
+loyaltyBL = (51.5,81.75)
 
 #Inter-Card Measurements
 origin = (8.5,6)

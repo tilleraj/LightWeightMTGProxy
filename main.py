@@ -44,7 +44,7 @@ for page_number in range(len(pageList)):
     for i in range(len(page)):
         card = page[i]
         cardPos = (i % 3, i // 3)
-        print(cardPos)
+        # print(cardPos)
         print(card)
         mat = layout.getMatrix(*cardPos, surf)
         ctx.set_matrix(mat)
