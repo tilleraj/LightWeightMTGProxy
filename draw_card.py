@@ -13,7 +13,17 @@ def showWrappedText(
     maxWidth = right - left
     inputLines = text.split('\n')
     inputWords = [line.split(' ') for line in inputLines]
-    
+
+    totalLetters = 0
+    for line in inputWords:
+        for word in line:
+            totalLetters += len(word)
+    charCap = 325
+    if totalLetters > charCap:
+        origLineHeight = lineHeight
+        lineHeight = (charCap*lineHeight)/totalLetters
+        print(f' * charCap of {charCap} exceeded by {totalLetters-charCap}.\n * lineHeight reduced from {origLineHeight} to {lineHeight}')
+
     currentOffset = 0
 
     for line in inputWords:
